@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,400;1,500&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    background-color: aliceblue;
+    box-shadow: 0 5px 10px gray;
+    display:flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+header .logo img{
+    height: 3rem;
+}
+header nav a{
+    color: rgb(78, 54, 54);
+    font-weight: 600;
+    padding: 1rem;
+    transition: .5s;
+}
+header nav a:hover{
+    color: aqua;
+    letter-spacing: 3px;
+}
+section{
+    padding: 5rem 9%;
+    min-height:100vh;
+}
+.home{
+    padding: 0;
+}
+.img{
+    background: url(Image/home.png);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.center{
+    position:absolute;
+    top: 52%;
+    left: 50%;
+    padding: 0 20px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.center .title {
+    color: #1f1f1f;
+    font-size: 55px;
+    font-weight: 600;
+}
+.center .subtitle {
+    color: #1f1f1f;
+    font-size: 40px;
+    font-weight: 600;
+}
+.button{
+    margin-top: 20px;
+}
+.button button{
+    border: 2px solid blue;
+    background: none;
+    color: blue;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    padding:10px 20px;
+    transition: .3s;
+}
+.button button:hover{
+    color: aliceblue;
+    background: blue;
+    transform: scale(1.10);
+}
+.about-content{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+iframe{
+    border-radius: 10px;
+    border: .2rem solid;
+}
+.heading{
+    font-size: 2rem;
+    margin-top: 2rem;
+    border-bottom: 2px solid aqua;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.about-text{
+    margin-left: 2rem;
+    text-align: justify;
+    font-size: 20px;
+    width: 50%;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 2rem;
+}
+.card{
+    display: flex;
+    background-color:azure;
+    border: .1rem solid #1f1f1f;
+    padding: 2rem;
+    margin: 1rem 1rem;
+    border-radius: 20px;
+    transition: .4s;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 1rem gray;
+}
+.card .icon img{
+    height: 10rem;
+    margin-right: 2rem;
+}
+.card-text h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card-text p{
+    text-align: center;
+}
+.col img{
+    width: 30rem;
+    margin: 1rem;
+    border-radius: 20px;
+    border: .2rem solid;
+    transition: .4s;
+}
+.col img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 1rem black;
+}
+.contact{
+    background-color: deepskyblue;
+    padding: 1rem 2rem;
+    min-height: 10rem;
+}
+.head{
+    display: flex;
+    align-items: center;
+}
+.head img{
+    height: 3rem;
+    margin-right: 10px;
+}
+.box1 p{
+    text-align: justify;
+}
+.contact-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+}
+.box4{
+    width: 20%;
+}
+.box1{
+    width: 25%;
+}
+.box2{
+    width: 20%;
+}
+.box3{
+    width: 20%;
+}
+.contact-content h1{
+    margin-bottom: 1rem;
+}
+.box2 p{
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+.box3 a{
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+    transition: .4s;
+}
+.box3 a:hover{
+    color: aqua;
+    letter-spacing: 2px;
+}
+.box4 .sosmed{
+    height: 40px;
+    width: 40px;
+    background: aqua;
+    color: #fff;
+    display: inline-flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: .4s;
+}
+.box4 .sosmed:hover{
+    transform: scale(1.2);
+    color: aqua;
+    background-color: white;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: aqua;
+
+}
+  
+@media (max-width:1025px) {
+    .about-content{
+        display: block;
+    }
+    iframe{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .about-text{
+        margin-left: 0;
+        width: 100%;
+    }
+    section{
+        min-height: auto;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .col img{
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+    .contact-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .box1, .box2, .box3, .box4{
+        width: 70%;
+        margin: 1rem;
+    }
+}
+@media (max-width: 450px) {
+    header{
+        display: inline;
+        justify-content: center;
+        width: 100%;
+    }
+    .logo{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    nav{
+        justify-content: center;
+    }
+    header nav a{
+        padding: 7.5px;
+    }
+    header nav a:hover{
+        color: aqua;
+        letter-spacing: 0;
+    }
+    .about-content{
+        display: block;
+    }
+    .about-text{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .about-text h1{
+        text-align: center;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        display: block;
+        margin:1.5rem 0 0 0;
+    }
+    .icon{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .col img{
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+    iframe{
+        width: 100%;
+    }
+    .contact-content{
+        display:block;
+    }
+    .box1, .box2, .box3, .box4{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
